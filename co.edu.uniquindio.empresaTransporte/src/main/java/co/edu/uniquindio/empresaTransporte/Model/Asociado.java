@@ -7,6 +7,8 @@ public class Asociado {
     private String email;
     private String celular;
     EmpresaTransporte ownedByEmpresaTransporte;
+    private Vehiculo vehiculo;
+
 
     /*Constructor*/
 
@@ -60,5 +62,24 @@ public class Asociado {
 
     public void setOwnedByEmpresaTransporte(EmpresaTransporte ownedByEmpresaTransporte) {
         this.ownedByEmpresaTransporte = ownedByEmpresaTransporte;
+    }
+
+    public Vehiculo getVehiculo() {
+        return vehiculo;
+    }
+
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
+    }
+
+    @Override
+    public String toString() {
+        return "Asociado{" +
+                "nombre='" + nombre + '\'' +
+                ", identidicacion='" + identidicacion + '\'' +
+                ", email='" + email + '\'' +
+                ", celular='" + celular + '\'' +
+                ", vehiculo=" + vehiculo +
+                '}';
     }
 }

@@ -5,7 +5,8 @@ import java.util.List;
 
 public class EmpresaTransporte {
     private String nombre;
-    List<Vehiculo> listaVehiculos = new ArrayList<>();
+    List<VehiculoCarga> listaVehiculosCarga = new ArrayList<>();
+    List<VehiculoPasajero> listaVehiculosPasajero = new ArrayList<>();
     List<Asociado> listaAsociados = new ArrayList<>();
 
 
@@ -28,12 +29,20 @@ public class EmpresaTransporte {
         this.nombre = nombre;
     }
 
-    public List<Vehiculo> getListaVehiculos() {
-        return listaVehiculos;
+    public List<VehiculoCarga> getListaVehiculosCarga() {
+        return listaVehiculosCarga;
     }
 
-    public void setListaVehiculos(List<Vehiculo> listaVehiculos) {
-        this.listaVehiculos = listaVehiculos;
+    public void setListaVehiculosCarga(List<VehiculoCarga> listaVehiculosCarga) {
+        this.listaVehiculosCarga = listaVehiculosCarga;
+    }
+
+    public List<VehiculoPasajero> getListaVehiculosPasajero() {
+        return listaVehiculosPasajero;
+    }
+
+    public void setListaVehiculosPasajero(List<VehiculoPasajero> listaVehiculosPasajero) {
+        this.listaVehiculosPasajero = listaVehiculosPasajero;
     }
 
     public List<Asociado> getListaAsociados() {

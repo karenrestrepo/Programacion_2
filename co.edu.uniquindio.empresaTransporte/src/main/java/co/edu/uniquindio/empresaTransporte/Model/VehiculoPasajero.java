@@ -2,25 +2,25 @@ package co.edu.uniquindio.empresaTransporte.Model;
 
 public class VehiculoPasajero extends Vehiculo {
 
-    private short maximopasajeros;
+    private int maximopasajeros;
 
     /*Constructor*/
 
     public VehiculoPasajero() {
     }
 
-    public VehiculoPasajero(String placa, String modelo, String marca, String color, short maximopasajeros) {
+    public VehiculoPasajero(String placa, String modelo, String marca, String color, int maximopasajeros) {
         super(placa, modelo, marca, color);
         this.maximopasajeros = maximopasajeros;
     }
 
     /*Getters and Setters*/
 
-    public short getMaximopasajeros() {
+    public int getMaximopasajeros() {
         return maximopasajeros;
     }
 
-    public void setMaximopasajeros(short maximopasajeros) {
+    public void setMaximopasajeros(int maximopasajeros) {
         this.maximopasajeros = maximopasajeros;
     }
 }

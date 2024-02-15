@@ -1,12 +1,11 @@
 package co.edu.uniquindio.empresaTransporte.Model;
 
-public class Vehiculo {
+public abstract class Vehiculo {
 
     private String placa;
     private String modelo;
     private String marca;
     private String color;
-    EmpresaTransporte ownedByEmpresaTransporte;
 
     /* Constructor*/
 
@@ -54,11 +53,13 @@ public class Vehiculo {
         this.color = color;
     }
 
-    public EmpresaTransporte getOwnedByEmpresaTransporte() {
-        return ownedByEmpresaTransporte;
-    }
-
-    public void setOwnedByEmpresaTransporte(EmpresaTransporte ownedByEmpresaTransporte) {
-        this.ownedByEmpresaTransporte = ownedByEmpresaTransporte;
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "placa='" + placa + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

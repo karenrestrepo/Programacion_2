@@ -3,14 +3,14 @@ package co.edu.uniquindio.empresaTransporte.Model;
 public class VehiculoCarga extends Vehiculo{
 
     private float capacidad;
-    private short numeroEjes;
+    private int numeroEjes;
 
     /*Constructor*/
 
     public VehiculoCarga() {
     }
 
-    public VehiculoCarga(String placa, String modelo, String marca, String color, float capacidad, short numeroEjes) {
+    public VehiculoCarga(String placa, String modelo, String marca, String color, float capacidad, int numeroEjes) {
         super(placa, modelo, marca, color);
         this.capacidad = capacidad;
         this.numeroEjes = numeroEjes;
@@ -26,11 +26,19 @@ public class VehiculoCarga extends Vehiculo{
         this.capacidad = capacidad;
     }
 
-    public short getNumeroEjes() {
+    public int getNumeroEjes() {
         return numeroEjes;
     }
 
-    public void setNumeroEjes(short numeroEjes) {
+    public void setNumeroEjes(int numeroEjes) {
         this.numeroEjes = numeroEjes;
+    }
+
+    @Override
+    public String toString() {
+        return "VehiculoCarga{" +
+                "capacidad=" + capacidad +
+                ", numeroEjes=" + numeroEjes +
+                "} " + super.toString();
     }
 }
